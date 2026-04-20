@@ -5,7 +5,7 @@ export default function Home() {
       <section className="relative h-[75vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-car.jpg" 
+            src="public/images/hero-car.jpg" 
             alt="Dubinsko pranje Savke" 
             className="w-full h-full object-cover opacity-60" 
           />
