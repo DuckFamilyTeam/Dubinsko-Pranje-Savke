@@ -1,8 +1,11 @@
-{/* HERO SEKCIJA */}
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white text-slate-900 font-sans">
+      {/* HERO SEKCIJA */}
       <section className="relative h-[75vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-car.jpg" 
+            src="/hero-car.jpg" 
             alt="Dubinsko pranje Savke" 
             className="w-full h-full object-cover opacity-60" 
           />
@@ -16,12 +19,58 @@
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="tel:+381692255213" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-xl">
+            <a href="tel:+381692255213" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-xl text-white no-underline">
               📞 069 225 5213
             </a>
-            <a href="https://wa.me/381692255213" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-xl">
+            <a href="https://wa.me/381692255213" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-xl text-white no-underline">
               💬 WhatsApp
             </a>
           </div>
         </div>
       </section>
+
+      {/* PORTFOLIO SEKCIJA */}
+      <section className="py-20 px-6 bg-slate-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-800 uppercase tracking-tighter">Naši Rezultati</h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mt-2"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Prvi par slika */}
+            <div className="group text-center">
+              <div className="grid grid-cols-2 gap-2 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <img src="/images/portfolio/pre-1.jpg" alt="Pre" className="w-full aspect-square object-cover" />
+                <img src="/images/portfolio/posle-1.jpg" alt="Posle" className="w-full aspect-square object-cover" />
+              </div>
+              <p className="mt-4 font-bold text-slate-700 uppercase text-sm italic">✅ Dubinsko pranje sedišta</p>
+            </div>
+
+            {/* Drugi par slika */}
+            <div className="group text-center">
+              <div className="grid grid-cols-2 gap-2 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <img src="/images/portfolio/pre-2.jpg" alt="Pre" className="w-full aspect-square object-cover" />
+                <img src="/images/portfolio/posle-2.jpg" alt="Posle" className="w-full aspect-square object-cover" />
+              </div>
+              <p className="mt-4 font-bold text-slate-700 uppercase text-sm italic">✅ Nameštaj i ugaone garniture</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* KONTAKT SEKCIJA */}
+      <footer className="py-20 bg-white text-center border-t border-slate-100 px-6">
+        <h3 className="text-xl font-bold mb-6 text-slate-800 italic">Zakažite termin:</h3>
+        <div className="flex flex-col items-center gap-6">
+          <a href="https://www.instagram.com/bg_dubinsko_pranje" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-800 hover:text-blue-600 transition-all font-bold text-xl border-2 border-slate-100 px-6 py-3 rounded-2xl shadow-sm no-underline">
+            📸 <span className="underline decoration-blue-500 decoration-2">@bg_dubinsko_pranje</span>
+          </a>
+          <p className="text-slate-400 text-sm italic mt-4">
+            "Kvalitet koji se vidi i miriše." — <span className="font-bold text-slate-600 uppercase">Savke</span>
+          </p>
+        </div>
+      </footer>
+    </main>
+  );
+}
