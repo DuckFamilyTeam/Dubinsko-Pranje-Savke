@@ -38,7 +38,6 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Prvi par slika */}
             <div className="group">
               <div className="grid grid-cols-2 gap-2 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transition-transform group-hover:scale-[1.02]">
                 <div className="relative">
@@ -53,7 +52,6 @@ export default function Home() {
               <p className="mt-4 text-center font-bold text-slate-700 tracking-widest uppercase text-sm italic">✅ Dubinsko pranje sedišta</p>
             </div>
 
-            {/* Drugi par slika */}
             <div className="group">
               <div className="grid grid-cols-2 gap-2 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transition-transform group-hover:scale-[1.02]">
                 <div className="relative">
